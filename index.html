@@ -1,14 +1,136 @@
 <!DOCTYPE html>
 <html lang="pl">
     <head>
-        <title>TODO supply a title</title>
+        <title>Szablon PSD</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css" type="text/css">
-        <script type="text/javascript" src="script.js"></script>
+        <script src="script.js"></script>
         
     </head>
     <body>
-        <div>TODO write content</div>
+        <nav id="nawigacja_gorna">
+           <a href="#"><i class="fas fa-universal-access"></i></a>
+           <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+            <a href="#"><i class="fas fa-align-justify"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <div class="div_szukaj">
+                <i class="fas fa-search"></i>
+                <input type="search" placeholder="Start searching">
+            </div>
+        </nav>
+        <article>
+
+            <aside id="lewy">
+
+                <div id="social_konceter">
+                    <div class="sociale">
+                        <div class="kolo_w_social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <span id="ilosc_fb">259</span><br/>FANS
+                        </div>
+                    </div>
+                    <div class="sociale">
+                        <div class="kolo_w_social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <span id="ilosc_tw">578</span><br/>Followers
+                        </div>
+                    </div>
+                    <div class="sociale">
+                        <div class="kolo_w_social">
+                            <a href="#"><i class="fas fa-rss"></i></a>
+                            <span id="ilosc_rss">578</span><br/>Subcribers
+                        </div>
+                    </div>
+                </div>
+                <form id="logowanie">
+                    <div class="logowanie_div">
+                        <input type="text" placeholder="Username">
+                    </div>
+
+                    <div class="logowanie_div">
+                        <input type="password" placeholder="Password">
+                    </div>
+
+                    <input type="button" value="Sign In">
+
+                </form>
+
+                <section id="pogoda">
+                    <div id="gorna_czesc_pogoda">
+
+                        <div id="lewa_gorna_pogoda">
+                            <span id="pogoda_miasto">Toronto</span><br/>
+                            Party Cloudy<br/>
+                            Humidity: <span id="wilgotnosc">48</span><br/>
+                            Wind: <span id="wiatr"> 35</span> km/h<br/>
+                        </div>
+                             <div id="prawa_gorna_pogoda">
+                                 <i class="fas fa-cloud"></i><br/>
+                                 <span id="temperatura">4</span>&#186; C<br/>
+                             </div>
+                        </div>
+
+                        <div id="dolna_czesc_pogoda">
+                            City: <i class="fas fa-search"></i>
+                            <input type="search" placeholder="Start searching">
+                    </div>
+                </section>
+            </aside>
+
+            <aside id="prawy">
+
+                <video width="320" height="240" controls>
+                    <source src="movie.mp4" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+
+                <section id="karuzela">
+
+                    <div class="przedmiot_w_karuzeli">
+                        <div class="cena_przedmiotu_w_karuzeli">
+                            $<span class="cena_przedmiotu_w_karuzeli">27</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="przedmiot_w_karuzeli">
+
+                        <div class="cena_przedmiotu_w_karuzeli">
+                            $<span class="cena_przedmiotu_w_karuzeli">90</span>
+
+                        </div>
+
+                    </div>
+
+                    <div id="sterowanie_przedmiotami">
+                        <div id="sterowanie_lewe">
+
+                        </div>
+                        <div id="sterowanie_prawe">
+
+                        </div>
+
+                    </div>
+
+
+                </section>
+
+
+            </aside>
+
+        </article>
+    <footer>
+        Loren ipsum
+    </footer>
     </body>
 </html>

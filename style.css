@@ -1,5 +1,50 @@
 *
 {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    --glowny-kolor-tla: #eaedf1;
+    --glowny-kolor-div: #323a45;
+    --glowny-kolor-napisy: #a2a9b1;
+    --kolor-podswietlenie: #42ff00;
+    --drugi-kolor-napisy: #eaedf1;
+}
+body
+{
+    background-color: var(--glowny-kolor-tla);
+    margin: 0px;
+    width: 100%;
+}
+
+
+#nawigacja_gorna
+{
+    margin-top: 53px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--glowny-kolor-div);
+    width: 758px;
+    height: 54px;
+    border-radius: 3px;
+}
+
+#nawigacja_gorna a
+{
+    color: var(--glowny-kolor-napisy);
+    text-decoration: none;
+    float: left;
+
+
+}
+
+#nawigacja_gorna ul
+{
+     display: block;
+     list-style-type: none;
+
+}
+
+
+.fas fa-universal-access
+{
+    font-size: 20px;
 }
