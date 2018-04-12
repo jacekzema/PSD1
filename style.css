@@ -15,7 +15,7 @@ body
     font-size: 14px;
     font-family: Calibri;
     background-color: var(--glowny-kolor-tla);
-    margin: 0px;
+    margin: 47px;
     width: 100%;
 }
 
@@ -23,7 +23,7 @@ body
 #nawigacja_gorna
 {
     position: relative;
-    margin-top: 53px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--glowny-kolor-div);
@@ -164,4 +164,160 @@ div.pojemnik
     border: none;
     float: left;
     width: 140px;
+}
+
+#nawigacja_gorna input[type="search" i]:focus
+{
+    color: var(--kolor-podswietlenie);
+    border: 1px solid var(--kolor-podswietlenie);
+
+}
+
+#kontener
+{
+    margin-top: 47px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 758px;
+}
+
+#social_konceter
+{
+    height: 110px;
+    width: 280px;
+
+}
+#social_konceter .sociale
+{
+    width: 87px;
+    height: 110px;
+    background-color: var(--glowny-kolor-div);
+    float: left;
+    border-radius: 3px;
+    color: var(--drugi-kolor-napisy);
+    text-align: center;
+    font-size: 11px;
+}
+#social_konceter a:nth-child(2) div.sociale
+{
+    margin-left: 9.5px;
+    margin-right: 9.5px;
+
+}
+
+#social_konceter .sociale span
+{
+    font-size: 14px;
+}
+
+#social_konceter .sociale .kolo_w_social
+{
+    margin-top: 16px;
+    margin-left: 23px;
+    width: 41px;
+    height: 41px;
+    border-radius: 90px;
+    background-color: var(--drugi-kolor-div);
+    text-align: center;
+}
+#social_konceter .sociale:hover
+{
+    color: var(--kolor-podswietlenie);
+}
+#social_konceter .sociale .kolo_w_social i
+{
+    margin-top: 13px;
+    font-size: 15px;
+}
+
+#logowanie_sekcja
+{
+    margin-top: 32px;
+    height: 159px;
+    width: 280px;
+}
+
+#logowanie_sekcja .logowanie_div
+{
+    position: relative;
+    height: 45px;
+    width: 280px;
+    background-color: var(--drugi-kolor-div);
+    border-radius: 3px;
+    margin-bottom: 11px;
+
+}
+
+#logowanie_sekcja .logowanie_div i
+{
+    color: var(--glowny-kolor-napisy);
+    position: absolute;
+    top: 15px;
+    left: 16px;
+
+}
+
+#logowanie_sekcja .logowanie_div input
+{
+    padding-left: 20px;
+    position: absolute;
+    right: 0px;
+    height: 45px;
+    width: 211px;
+    background-color: var(--glowny-kolor-div);
+    border: none;
+    color: #5d636b;
+    font-size: 18px;
+    font-family: Calibri;
+    border-radius: 3px;
+}
+
+#logowanie_sekcja input[type="button"]
+{
+    height: 42px;
+    width: 280px;
+    background-color: #cad2dd;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Calibri;
+}
+
+#logowanie_sekcja .logowanie_div input:focus
+{
+    color: var(--kolor-podswietlenie);
+}
+
+aside#lewy
+{
+
+    display: block;
+    width: 280px;
+    border: 1px solid black;
+    float: left;
+
+}
+
+aside#prawy
+{
+    display: block;
+    float: left;
+    border: 1px solid black;
+}
+footer
+{
+
+    clear: both;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: var(--glowny-kolor-div);
+    width: 758px;
+    height: 54px;
+    border-radius: 3px;
+    text-align: center;
+    color: var(--glowny-kolor-napisy);
+    margin-top: 47px;
 }
