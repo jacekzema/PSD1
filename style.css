@@ -9,6 +9,7 @@
     --drugi-kolor-napisy: #eaedf1;
     --drugi-kolor-div: #222931;
     --kolor-podpisy: #5d636b;
+
 }
 body
 {
@@ -179,6 +180,25 @@ div.pojemnik
     margin-right: auto;
     margin-left: auto;
     width: 758px;
+    height: 100%;
+}
+
+aside#lewy
+{
+
+    display: block;
+    width: 280px;
+    border: 1px solid black;
+    float: left;
+
+}
+
+aside#prawy
+{
+    position: relative;
+    display: block;
+    float: right;
+    border: 1px solid black;
 }
 
 #social_konceter
@@ -233,7 +253,7 @@ div.pojemnik
 #logowanie_sekcja
 {
     margin-top: 32px;
-    height: 159px;
+   /* height: 159px; */
     width: 280px;
 }
 
@@ -291,25 +311,165 @@ div.pojemnik
     color: var(--kolor-podswietlenie);
 }
 
-aside#lewy
+#pogoda
 {
 
-    display: block;
     width: 280px;
-    border: 1px solid black;
+    height: 203px;
+    background-color: var(--glowny-kolor-div);
+    border-radius: 3px;
+    margin-top: 37px;
+
+}
+#pogoda #gorna_czesc_pogoda
+{
+    margin-left: auto;
+    margin-right: auto;
+    height: 144px;
+    width: 230px;
+    border-bottom: 1px solid #454d58;
+
+}
+#pogoda #gorna_czesc_pogoda #lewa_gorna_pogoda
+{
+    margin-top: 33px;
     float: left;
+    width: 50%;
+    color: var(--glowny-kolor-napisy);
+    font-size: 14px;
+    font-family: Calibri;
+    font-style: italic;
 
 }
 
-aside#prawy
+#pogoda #gorna_czesc_pogoda #lewa_gorna_pogoda #pogoda_miasto
 {
     display: block;
-    float: left;
-    border: 1px solid black;
+    color: #eaedf1;
+    font-size: 17px;
+    font-family: Calibri;
+    font-weight: bold;
+    font-style: normal;
+
 }
+
+#pogoda #gorna_czesc_pogoda #prawa_gorna_pogoda
+{
+    margin-top: 24px;
+    float: left;
+    width: 50%;
+    text-align: center;
+    color: var(--glowny-kolor-tla);
+    font-family: Calibri;
+    font-size: 22px;
+
+}
+
+
+#pogoda #dolna_czesc_pogoda
+{
+    position: relative;
+    padding-top: 21px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 21px;
+    width: 228px;
+    font-family: Calibri;
+    font-size: 14px;
+    color: var(--glowny-kolor-tla);
+}
+
+#pogoda #dolna_czesc_pogoda #szukanie_miasto
+{
+    position: absolute;
+    right: 0px;
+    top: 12px;
+    padding-top: 9px;
+    padding-left: 14px;
+    width: 175px;
+    height: 21px;
+    border-radius: 3px;
+    background-color: var(--drugi-kolor-div);
+    float: right;
+    font-size: 12px;
+    color: var(--glowny-kolor-napisy);
+
+}
+
+#pogoda #dolna_czesc_pogoda #szukanie_miasto input
+{
+    border: none;
+    background-color: var(--drugi-kolor-div);
+    float: right;
+    width: 150px;
+    font-size: 12px;
+
+}
+video
+{
+
+    width: 421px;
+    height: 296px;
+    background-color: var(--glowny-kolor-div);
+    border-radius: 3px;
+
+}
+
+#karuzela
+{
+    width: 421px;
+    height: 203px;
+    background-color: var(--glowny-kolor-div);
+    border-radius: 3px;
+    margin-top: 33px;
+}
+
+#karuzela .przedmiot_w_karuzeli
+{
+    height: 134px;
+    width: 174px;
+    background-color: #cad2dd;
+    float: left;
+    margin-top: 22px;
+    margin-left: 23px;
+    border-radius: 3px;
+    position: relative;
+}
+
+#karuzela .przedmiot_w_karuzeli .cena_przedmiotu_w_karuzeli
+{
+    background-color: var(--glowny-kolor-div);
+    position: absolute;
+    color: var(--glowny-kolor-tla);
+    width: 39px;
+    height: 39px;
+    left: 12px;
+    bottom: 10px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#karuzela .przedmiot_w_karuzeli .cena_przedmiotu_w_karuzeli .cena_przedmiotu_w_karuzeli_span
+{
+    display: block;
+    margin-top: 10px;
+}
+
+#karuzela .przedmiot_w_karuzeli .sterowanie
+{
+    height: 5px;
+    width: ;
+}
+
+#karuzela .przedmiot_w_karuzeli .sterowanie:hover
+{
+
+}
+
 footer
 {
-
+    margin-top: 47px;
     clear: both;
     margin-right: auto;
     margin-left: auto;
@@ -319,5 +479,5 @@ footer
     border-radius: 3px;
     text-align: center;
     color: var(--glowny-kolor-napisy);
-    margin-top: 47px;
+
 }
