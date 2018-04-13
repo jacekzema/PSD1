@@ -16,7 +16,7 @@ body
     font-size: 14px;
     font-family: Calibri;
     background-color: var(--glowny-kolor-tla);
-    margin: 47px;
+    margin-top: 47px;
     width: 100%;
 }
 
