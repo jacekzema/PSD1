@@ -176,6 +176,7 @@ div.pojemnik
 
 #kontener
 {
+    display: flow-root;
     margin-top: 47px;
     margin-right: auto;
     margin-left: auto;
@@ -188,7 +189,6 @@ aside#lewy
 
     display: block;
     width: 280px;
-    border: 1px solid black;
     float: left;
 
 }
@@ -198,7 +198,6 @@ aside#prawy
     position: relative;
     display: block;
     float: right;
-    border: 1px solid black;
 }
 
 #social_konceter
@@ -389,7 +388,7 @@ aside#prawy
     width: 175px;
     height: 21px;
     border-radius: 3px;
-    background-color: var(--drugi-kolor-div);
+    background-color: #222931;
     float: right;
     font-size: 12px;
     color: var(--glowny-kolor-napisy);
@@ -399,12 +398,20 @@ aside#prawy
 #pogoda #dolna_czesc_pogoda #szukanie_miasto input
 {
     border: none;
-    background-color: var(--drugi-kolor-div);
+    background-color: #222931;
     float: right;
     width: 150px;
     font-size: 12px;
+    color: #616870;
+
 
 }
+#pogoda #dolna_czesc_pogoda #szukanie_miasto input:focus
+{
+    border: 1px solid var(--kolor-podswietlenie);
+    color: var(--kolor-podswietlenie);
+}
+
 video
 {
 
@@ -417,6 +424,7 @@ video
 
 #karuzela
 {
+    position: relative;
     width: 421px;
     height: 203px;
     background-color: var(--glowny-kolor-div);
@@ -435,6 +443,7 @@ video
     border-radius: 3px;
     position: relative;
 }
+
 
 #karuzela .przedmiot_w_karuzeli .cena_przedmiotu_w_karuzeli
 {
@@ -456,16 +465,33 @@ video
     margin-top: 10px;
 }
 
-#karuzela .przedmiot_w_karuzeli .sterowanie
+#karuzela div.sterowanie1
 {
+    position: absolute;
     height: 5px;
-    width: ;
+    width: 32px;
+    background-color: #222931;
+    right: 29px;
+    bottom: 20px;
+    border-radius: 5px;
 }
 
-#karuzela .przedmiot_w_karuzeli .sterowanie:hover
+#karuzela div.sterowanie2
 {
-
+    position: absolute;
+    height: 5px;
+    width: 32px;
+    background-color: #222931;
+    right: 69px;
+    bottom: 20px;
+    border-radius: 5px;
 }
+
+#karuzela .sterowanie2:hover,#karuzela .sterowanie1:hover
+{
+    background-color: var(--glowny-kolor-tla);
+}
+
 
 footer
 {
@@ -479,5 +505,9 @@ footer
     border-radius: 3px;
     text-align: center;
     color: var(--glowny-kolor-napisy);
+}
 
+footer p
+{
+    padding-top: 17px;
 }
